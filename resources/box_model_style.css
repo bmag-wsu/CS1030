@@ -1,0 +1,57 @@
+/*
+  white: #FFFFFF
+  purple (accent 1): #492365
+  gray (accent 2): #4a494d
+*/
+
+body {
+  /* not required */
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3 {
+  color: #492365;
+}
+
+h1 {
+  text-align: center;
+}
+
+th, td {
+  border: #4a494d solid 3px;
+  padding: 5px 10px 5px 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+a {
+  color: #492365;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4a494d;
+}
+
+p.tc {
+  background-color: #492365;
+  color: #FFFFFF;
+  width: 720px;
+  padding: 33px 33px 33px 33px;
+  border: #4a494d dashed 3px;
+  margin: 16px 16px 16px 16px;
+}
+
+div {
+  /* assignment says 'the paragraph' regarding the background color
+  however, the only way to achieve the styling changes implied by the 
+  context is to style the div element. */
+  background-color: #492365;
+  width: 646px;
+  padding: 33px 70px 33px 70px;
+  border: #4a494d dotted 3px;
+  margin: 16px 16px 16px 16px;
+}
