@@ -1,0 +1,52 @@
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'VT323';
+    background-color: black;
+    color: #66FF66;
+}
+
+a {
+    color: #FFB000;
+}
+
+a:hover {
+    color: #FFCC00;
+}
+
+h1, h2 {
+    color: #FFB000;
+}
+
+img.menuicon {
+    float: left;
+}
+
+h1.htop {
+    padding-top: 7px;
+    padding-left: 50px;
+}
+
+ul.menulist {
+    display: none;
+}
+
+div.header {
+    width: 100%;
+}
+
+img.left {
+    float: left;
+}
+
+img.right {
+    float: right;
+}
+
+div.para {
+    clear: both;
+}

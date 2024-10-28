@@ -4,23 +4,165 @@
 <head>
 <meta charset="UTF-8">
 
-<title>CS1030 Homepage</title>
+<title>Participating in the NCL</title>
 
-<meta name="description" content="Links to CS1030 Assignments">
-<meta name="keywords" content="CS1030, WSU, Weber State University, EAST">
+<meta name="description" content="Useful tools for participating in the NCL">
+<meta name="keywords" content="NCL, National Cyber League, Wireshark, Nmap, Kali, hashcat, john, John the Ripper, python">
 <meta name="author" content= "Brian Magness">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--<link rel="stylesheet" href="resources/running_style.css">-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="resources/index.css">
 </head>
 
 <body>
+<script type="text/javascript">
+function show(id){
+    e = document.getElementById(id)
+    e.style.display = 'block'
+}
 
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="running.html">Trail Running</a></li>
-<li><a href="box_model.html">CSS Box Model</a></lli>
+function hide(id){
+    e = document.getElementById(id)
+    e.style.display = 'none'
+}
+</script>
+<div class="header">
+<img src="resources/menu.png" height="48px" width="48px" class="menuicon" onmouseover="show('menu')">
+<h1 class="htop">Participating in the NCL</h1>
+
+<ul id="menu" class="menulist" onmouseleave="hide('menu')">
+    <li><a href="index.html">Participating in the NCL</a></li>
+    <li><a href="running.html">Trail Running</a></li>
+    <li><a href="box_model.html">CSS Box Model</a></lli>
 </ul>
+</div>
+
+<div class="para">
+<a href="https://cyberskyline.com/events/ncl"><img src="resources/ncl_logo.png" width="231px" height="243px" class="left"></a>
+<h2>What is the NCL?</h2>
+<p>The NCL, or National Cyber League, is a cybersecurity competition geared 
+    towards helping students hone and practice skills relevant to their future 
+    jobs in a competitive environment.  Competitions cover various categories 
+    such as cryptography, open source intelligence, log parsing, forensics, 
+    and scanning.  You can register for the NCL 
+    <a href="https://cyberskyline.com/events/ncl">here</a> or clicking the 
+    NCL logo.  Solving many of the problems presented during a competition 
+    can be aided by access to the right tools.
+</p>
+</div>
+
+<div class="para">
+<a href="https://www.kali.org/get-kali/#kali-platforms"><img src="resources/kali_logo.png" width="256px" height="251px" class="right"></a>
+<h2>Kali Linux</h2>
+<p>Kali Linux is distribution of Linux geared towards pen-testing, and 
+    therefore has many tools available easily for solving problems in an NCL 
+    competition.  It can be downloaded freely 
+    <a href="https://www.kali.org/get-kali/#kali-platforms">here</a>.  For 
+    more information about the tools available in Kali, check out this list 
+    <a href="https://www.kali.org/tools/">here</a>.  Furthermore, some 
+    questions asked in the competition may lean on some familiarity with 
+    Linux, so getting familiarity with Kali will serve you well.
+</p>
+</div>
+
+<div class="para">
+<a href="https://www.wireshark.org/download.html"><img src="resources/wireshark_logo.png" width="256px" height="256px" class="left"></a>
+<h2>Wireshark</h2>
+<p>Wireshark is a tool included with Kali Linux, but if you're on another 
+    platform you can get it 
+    <a href="https://www.wireshark.org/download.html">here</a>.  It lets 
+    you monitor network traffic.  It presents you with a lot of information 
+    and options for filtering or looking at it so I'd highly recommend 
+    getting familiar with it's use before the competition.  It will be 
+    key for successfully completing some of the challenges in NCL 
+    competitions.
+</p>
+
+<p>If you have access to pluralsight, there are some good resources 
+    available there for learning how to use Wireshark.
+</p>
+
+<table>
+    <tr>
+        <th>Course</th>
+        <th>Level</th>
+    </tr>
+    <tr>
+        <td><a href="https://app.pluralsight.com/library/courses/foundational-tcp-analysis-wireshark/table-of-contents">
+            Foundational TCP Analysis with Wireshark
+        </a></td>
+        <td>Beginner</td>
+    </tr>
+    <tr>
+        <td><a href="https://app.pluralsight.com/library/courses/wireshark-configuration-cyber-security-analysis/table-of-contents">
+            Wireshark Configuration for Cyber Security Analysis 
+        </a></td>
+        <td>Beginner</td>
+    </tr>
+    <tr>
+        <td><a href="https://app.pluralsight.com/library/courses/troubleshooting-slow-networks-wireshark/table-of-contents">
+            Troubleshooting Slow Networks with Wireshark
+        </a></td>
+        <td>Intermediate</td>
+    </tr>
+    <tr>
+        <td><a href="https://app.pluralsight.com/library/courses/identify-common-cyber-network-attacks-wireshark/table-of-contents">
+            Identify Common Cyber Network Attacks with Wireshark
+        </a></td>
+        <td>Intermediate</td>
+    </tr>
+</table>
+</div>
+
+<div class="para">
+<a href="https://nmap.org/download.html"><img src="resources/nmap_logo.png" width="256px" height="256px" class="right"></a>
+<h2>Nmap</h2>
+<p>Nmap is a really powerful tool for scanning activities, and is included 
+    as part of Kali Linux.  For other platforms, you can download it 
+    <a href="https://nmap.org/download.html">here</a>.  It seems simple at 
+    first but there are many options for altering it's behavior.  I'd 
+    recommend at least getting familiar with some of the options available 
+    by perusing the <a href="https://nmap.org/book/man.html">manual</a>.
+</p>
+</div>
+
+<div class="para">
+<!-- <a href="https://hashcat.net/hashcat/"><img src="resources/hashcat_logo.png" width="225px" height="225px" class="left"></a> -->
+<!-- <a href="https://www.openwall.com/john/"><img src="resources/john_logo.png" width="225px" height="225px" class="right"></a> -->
+<h2>hashcat / John the Ripper</h2>
+<p>Hashcat is a handy tool for cracking hashes, and is included in Kali 
+    Linux.  You can grab it <a href="https://hashcat.net/hashcat/">here</a>. 
+    Like any of these tools, getting familiar with the options available to 
+    you and it's modes of operation are a good idea before the competition 
+    opens.  One of the attack methods in hashcat requires a word list, 
+    a decent one, called rockyou.txt, can be obtained 
+    <a href="https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt">
+    here</a>.
+</p>
+<p>Another tool that is handy for these sorts of problems is 
+    <a href="https://www.openwall.com/john/">John the Ripper</a>.  It's a bit 
+    different, and their homepage has links to many word lists for 
+    dictionary attacks.
+</p>
+</div>
+
+<div class="para">
+<a href="https://www.python.org/downloads/"><img src="resources/python_logo.png" width="256px" height="256px" class="left"></a>
+<h2>python</h2>
+<p>For most problems, a specialized tool will be your best bet, saving you 
+    time and effort over implementing your own solution.  Sometimes, however, 
+    you don't have a tool appropriate to the problem and need to implement 
+    your own solution.  While you can frequently patch something together 
+    with a shell script using grep and other commandn line tools, using 
+    a scripting language like python can speed the implementation of those 
+    problems that you want to take a custom approach to.  You can get 
+    python <a href="https://www.python.org/downloads/">here</a>.
+</p>
+</div>
 
 </body>
 </html>
