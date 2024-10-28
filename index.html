@@ -30,7 +30,7 @@ function hide(id){
     e.style.display = 'none'
 }
 </script>
-<div class="header">
+<div class="header" id="top">
 <img src="resources/menu.png" height="48" width="48" class="menuicon" onmouseover="show('menu')" alt="Menu Icon">
 <h1 class="htop">Participating in the NCL</h1>
 
@@ -41,7 +41,7 @@ function hide(id){
 </ul>
 </div>
 
-<div class="para">
+<div class="para" id="ncl">
 <a href="https://cyberskyline.com/events/ncl"><img src="resources/ncl_logo.png" width="231" height="243" class="left" alt="National Cyber League Logo"></a>
 <h2>What is the NCL?</h2>
 <p>The NCL, or National Cyber League, is a cybersecurity competition geared 
@@ -53,9 +53,18 @@ function hide(id){
     NCL logo.  Solving many of the problems presented during a competition 
     can be aided by access to the right tools.
 </p>
+
+<h3>Useful Tools</h3>
+<ul>
+    <li><a href="#kali">Kali Linux</a></li>
+    <li><a href="#wireshark">Wireshark</a></li>
+    <li><a href="#nmap">nmap</a></li>
+    <li><a href="#hashcat">hashcat / John the Ripper</a></li>
+    <li><a href="#python">Python</a></li>
+</ul>
 </div>
 
-<div class="para">
+<div class="para" id="kali">
 <a href="https://www.kali.org/get-kali/#kali-platforms"><img src="resources/kali_logo.png" width="256" height="251" class="right" alt="Kali Linux Logo"></a>
 <h2>Kali Linux</h2>
 <p>Kali Linux is distribution of Linux geared towards pen-testing, and 
@@ -67,9 +76,10 @@ function hide(id){
     questions asked in the competition may lean on some familiarity with 
     Linux, so getting familiarity with Kali will serve you well.
 </p>
+<a href="#top">return to top</a>
 </div>
 
-<div class="para">
+<div class="para" id="wireshark">
 <a href="https://www.wireshark.org/download.html"><img src="resources/wireshark_logo.png" width="256" height="256" class="left" alt="Wireshark Logo"></a>
 <h2>Wireshark</h2>
 <p>Wireshark is a tool included with Kali Linux, but if you're on another 
@@ -116,9 +126,10 @@ function hide(id){
         <td>Intermediate</td>
     </tr>
 </table>
+<a href="#top">return to top</a>
 </div>
 
-<div class="para">
+<div class="para" id="nmap">
 <a href="https://nmap.org/download.html"><img src="resources/nmap_logo.png" width="256" height="256" class="right" alt="nmap logo"></a>
 <h2>Nmap</h2>
 <p>Nmap is a really powerful tool for scanning activities, and is included 
@@ -128,9 +139,10 @@ function hide(id){
     recommend at least getting familiar with some of the options available 
     by perusing the <a href="https://nmap.org/book/man.html">manual</a>.
 </p>
+<a href="#top">return to top</a>
 </div>
 
-<div class="para">
+<div class="para" id="hashcat">
 <!-- <a href="https://hashcat.net/hashcat/"><img src="resources/hashcat_logo.png" width="225" height="225" class="left" alt="hashcat logo"></a> -->
 <!-- <a href="https://www.openwall.com/john/"><img src="resources/john_logo.png" width="225" height="225" class="right" alt="John the Ripper Logo"></a> -->
 <h2>hashcat / John the Ripper</h2>
@@ -148,9 +160,10 @@ function hide(id){
     different, and their homepage has links to many word lists for 
     dictionary attacks.
 </p>
+<a href="#top">return to top</a>
 </div>
 
-<div class="para">
+<div class="para" id="python">
 <a href="https://www.python.org/downloads/"><img src="resources/python_logo.png" width="256" height="256" class="left" alt="Python Logo"></a>
 <h2>Python</h2>
 <p>For most problems, a specialized tool will be your best bet, saving you 
@@ -162,6 +175,7 @@ function hide(id){
     problems that you want to take a custom approach to.  You can get 
     python <a href="https://www.python.org/downloads/">here</a>.
 </p>
+<a href="#top">return to top</a>
 </div>
 
 </body>
